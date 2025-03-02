@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozone Wellness Spa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://fonts.googleapis.com/css?family=Nanum Myeongjo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nanum Myeongjo', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif']
+                    },
+                    colors: {
+                        primary: {
+                            50: '#FEF4EA',
+                            100: '#F39629',
+                            200: '#CC3300',
+                        },
+                        secondary: {
+                            100: '#71471E',
+                            200: '#76621B',
+                        },
+
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        #carousel {
+            width: 100%;
+            display: flex;
+        }
+
+        #carousel>div {
+            min-width: 100%;
+        }
+
+        .bullet {
+            width: 8px;
+            height: 8px;
+            background-color: gray;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .active {
+            width: 12px;
+            height: 12px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body class="relative">
+
+    <!-- Header start here -->
+    <header class="absolute w-full z-10 text-white pb-1 backdrop-blur-sm bg-linear-to-b from-black to-transparent">
+        <div class=" mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center w-3/12">
+                <img loading="lazy" src="assets/images/logo/OWS_Logo.svg" alt="Logo">
+            </div>
+            <div class="text-center">
+                <h1 class="text-lg font-semibold -mb-1.5">NORTHUMBERLAND HEIGHTS</h1>
+                <div class="w-10/12 mx-auto">
+                    <p class="text-sm border-b">RETREAT</p>
+                    <p class="uppercase">COBOURG</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-around w-3/12">
+                <button class="border px-8 py-2 rounded-lg font-poppins">Book Now</button>
+                <button class="text-3xl"><img loading="lazy" src="./assets/icons/hamburger_menu.svg" alt=""></button>
+            </div>
+        </div>
+        <nav class="border-b border-gray-400 container mx-auto">
+            <div class="container mx-auto px-4 py-2 flex justify-center">
+                <div></div>
+                <ul class="flex justify-center mx-auto space-x-6 text-center">
+                    <li>
+                        <a href="#" class="hover:text-primary-100 font-bold">Day Spa</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary-100 font-bold">OverNight</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary-100 font-bold flex items-center gap-2">
+                            <span>Spa Therapies</span>
+                            <img loading="lazy" src="./assets/icons/arrow_down.svg" alt="Arrow Down">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary-100 font-bold flex items-center gap-2">
+                            <span>Packages</span>
+                            <img loading="lazy" src="./assets/icons/arrow_down.svg" alt="Arrow Down">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary-100 font-bold">Wedding & Events</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary-100 font-bold">Xperience</a>
+                    </li>
+                </ul>
+                <div class="">
+                    <img loading="lazy" src="./assets/icons/magnifying_glass.svg" alt="Search">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header end here -->
+
+
+    <main class="w-full">
+        <section class="w-full h-screen relative bg-cover bg-center bg-no-repeat text-center text-white"
+            style="background-image: url('./assets/images/background/bg_1.jpg');">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full overflow-hidden">
+                <div class="flex no-scrollbar transition-transform duration-1000 ease-in-out" id="carousel">
+                    <div>
+                        <div
+                            class="flex flex-col items-center justify-center text-center text-white relative backdrop-blur-sm bg-primary-100/6 w-8/12 py-4 mx-auto ">
+                            <div class="relative z-10 px-4 text-center space-y-2">
+                                <div class="relative z-10 px-4 text-center w-full mx-auto">
+                                    <h1 class="text-3xl md:text-6xl mb-4 font-bold !leading-tight">Embark On The Journey
+                                        Of
+                                        Rejuvenation</h1>
+                                </div>
+                                <div class="flex w-full items-center">
+                                    <div class="w-full border border-secondary-100"></div>
+                                    <div class="w-full border border-primary-100"></div>
+                                    <div class="w-full border border-primary-200"></div>
+                                </div>
+                                <div class="relative z-10 px-4 text-center">
+                                    <p class="text-base md:text-lg mb-8 font-poppins">With custom-crafted, exquisite
+                                        getaways
+                                        designed exclusively for you.</p>
+                                    <button class="bg-primary-200 px-12 py-4 mt-10 rounded-xl font-poppins">
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div
+                            class="snap-center p-5 flex flex-col items-center justify-center text-center text-white relative backdrop-blur-sm bg-primary-100/6 w-8/12 py-6 mx-auto ">
+                            <div class="relative z-10 px-4 text-center space-y-2">
+                                <div class="relative z-10 px-4 text-center w-full mx-auto">
+                                    <h1 class="text-3xl md:text-6xl mb-4 font-bold !leading-tight">Lorem ipsum dolor sit
+                                        amet consectetur.</h1>
+                                </div>
+                                <div class="flex w-full items-center">
+                                    <div class="w-full border border-secondary-100"></div>
+                                    <div class="w-full border border-primary-100"></div>
+                                    <div class="w-full border border-primary-200"></div>
+                                </div>
+                                <div class="relative z-10 px-4 text-center">
+                                    <p class="text-base md:text-lg mb-8 font-poppins">With custom-crafted, exquisite
+                                        getaways
+                                        designed exclusively for you.</p>
+                                    <button class="bg-primary-200 px-12 py-4 mt-10 rounded-xl font-poppins">
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div
+                            class="snap-center p-5 flex flex-col items-center justify-center text-center text-white relative backdrop-blur-sm bg-primary-100/6 w-8/12 py-6 mx-auto ">
+                            <div class="relative z-10 px-4 text-center space-y-2">
+                                <div class="relative z-10 px-4 text-center w-full mx-auto">
+                                    <h1 class="text-3xl md:text-6xl mb-4 font-bold !leading-tight">Lorem ipsum, dolor
+                                        sit
+                                        amet consectetur adipisicing.</h1>
+                                </div>
+                                <div class="flex w-full items-center">
+                                    <div class="w-full border border-secondary-100"></div>
+                                    <div class="w-full border border-primary-100"></div>
+                                    <div class="w-full border border-primary-200"></div>
+                                </div>
+                                <div class="relative z-10 px-4 text-center">
+                                    <p class="text-base md:text-lg mb-8 font-poppins">With custom-crafted, exquisite
+                                        getaways
+                                        designed exclusively for you.</p>
+                                    <button class="bg-primary-200 px-12 py-4 mt-10 rounded-xl font-poppins">
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute top-1/2 transform -translate-y-1/2 left-4">
+                <button class="p-2" id="prev">
+                    <img loading="lazy" src="./assets/icons/arrow_left.svg" alt="left arrow">
+                </button>
+            </div>
+
+            <div class="absolute top-1/2 transform -translate-y-1/2 right-4">
+                <button class="p-2" id="next">
+                    <img loading="lazy" src="./assets/icons/arrow_right.svg" alt="right arrow">
+                </button>
+            </div>
+
+            <div class="absolute bottom-36 left-1/2 transform -translate-x-1/2 flex space-x-2 flex justify-center items-center space-x-3 mt-4"
+                id="pagination">
+                <div class="bg-white bullet active"></div>
+                <div class="bg-white bullet"></div>
+                <div class="bg-white bullet"></div>
+            </div>
+
+            <div
+                class="absolute bottom-24 -right-10 transform -translate-x-1/2 flex space-x-2 flex justify-center items-center space-x-3 mt-4">
+                <img loading="lazy" src="./assets/images/booking_dot_com.svg" alt="">
+
+            </div>
+
+        </section>
+
+        <section class="w-full h-screen relative bg-primary-50">
+            <img src="./assets/images/top_left_leaf.svg" alt="leaf" class="absolute top-0 left-0">
+            <img src="./assets/images/top_right_leaf.svg" alt="leaf" class="absolute top-0 right-0">
+            <img src="./assets/images/bottom_left_leaf.svg" alt="leaf" class="absolute bottom-0 left-0">
+            <img src="./assets/images/bottom_right_leaf.svg" alt="leaf" class="absolute bottom-0 right-0">
+            <div class="p-8 w-full relative">
+
+                <h1 class="text-center text-2xl font-bold text-primary-200 relative w-full max-w-xl mx-auto">
+                    <span class="border-b border-l border-primary-200 absolute top-4 left-2 w-5 h-5"></span>
+                    <span class="border-t border-r border-primary-200 absolute bottom-4 right-2 w-5 h-5"></span>
+                    <span>Welcome To The Northumberland Heights Retreat</span>
+                </h1>
+
+                <div class="flex w-full max-w-5xl my-8 mx-auto">
+                    <div class="w-full md:w-5/12">
+                        <img loading="lazy" src="./assets/images/image_1.svg" alt="Massage Image">
+                    </div>
+
+                    <div class="w-full md:w-7/12 text-pborder-primary-200 my-auto p-4 space-y-4">
+
+                        <!-- Accordion Item 1 -->
+                        <div class="w-full">
+                            <button onclick="toggleAccordion(1)" class="flex flex-row items-center gap-2">
+                                <img loading="lazy" src="./assets/icons/spa.svg" alt="icon" class="w-5" />
+                                <p class="flex items-center font-semibold text-lg text-primary-200">Spa</p>
+                                <img loading="lazy" src="./assets/icons/angle_up.svg" alt="">
+                            </button>
+                            <div class="p-4 text-gray-600 w-full" id="content-1">
+                                <p class="text-sm text-primary-200 font-poppins">Explore Relaxation With Our Signature
+                                    Treatments,
+                                    Massages, And Therapies. Invigorate With Meditative Sessions For Total Rejuvenation
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div class="w-full">
+                            <button onclick="toggleAccordion(2)" class="flex flex-row items-center gap-2">
+                                <img loading="lazy" src="./assets/icons/home.svg" alt="icon" class="w-5" />
+                                <p class="flex items-center font-semibold text-lg text-primary-200">Accommodation</p>
+                                <img loading="lazy" src="./assets/icons/angle_up.svg" alt="angle up">
+                            </button>
+                            <div class="hidden p-4 text-gray-600 w-full" id="content-2">
+                                <p class="text-sm text-primary-200 font-poppins">Explore Relaxation With Our Signature
+                                    Treatments,
+                                    Massages, And Therapies. Invigorate With Meditative Sessions For Total Rejuvenation
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div class="w-full">
+                            <button onclick="toggleAccordion(3)" class="flex flex-row items-center gap-2">
+                                <img loading="lazy" src="./assets/icons/yoga.svg" alt="icon" class="w-5" />
+                                <p class="flex items-center font-semibold text-lg text-primary-200">Yoga</p>
+                                <img loading="lazy" src="./assets/icons/angle_up.svg" alt="angle up">
+                            </button>
+                            <div class="hidden p-4 text-gray-600 w-full" id="content-3">
+                                <p class="text-sm text-primary-200 font-poppins">Explore Relaxation With Our Signature
+                                    Treatments,
+                                    Massages, And Therapies. Invigorate With Meditative Sessions For Total Rejuvenation
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4 -->
+                        <div class="w-full">
+                            <button onclick="toggleAccordion(4)" class="flex flex-row items-center gap-2">
+                                <img loading="lazy" src="./assets/icons/wellness.svg" alt="icon" class="w-5" />
+                                <p class="flex items-center font-semibold text-lg text-primary-200">Wellness</p>
+                                <img loading="lazy" src="./assets/icons/angle_up.svg" alt="angle up">
+                            </button>
+                            <div class="hidden p-4 text-gray-600 w-full" id="content-4">
+                                <p class="text-sm text-primary-200 font-poppins">Explore Relaxation With Our Signature
+                                    Treatments,
+                                    Massages, And Therapies. Invigorate With Meditative Sessions For Total Rejuvenation
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 5 -->
+                        <div class="w-full">
+                            <button onclick="toggleAccordion(5)" class="flex flex-row items-center gap-2">
+                                <img loading="lazy" src="./assets/icons/discover.svg" alt="icon" class="w-5" />
+                                <p class="flex items-center font-semibold text-lg text-primary-200">Discover Nature</p>
+                                <img loading="lazy" src="./assets/icons/angle_up.svg" alt="angle up">
+                            </button>
+                            <div class="hidden p-4 text-gray-600 w-full" id="content-5">
+                                <p class="text-sm text-primary-200 font-poppins">Explore Relaxation With Our Signature
+                                    Treatments,
+                                    Massages, And Therapies. Invigorate With Meditative Sessions For Total Rejuvenation
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 6 -->
+                        <div class="w-full">
+                            <button onclick="toggleAccordion(6)" class="flex flex-row items-center gap-2">
+                                <img loading="lazy" src="./assets/icons/in_house.svg" alt="icon" class="w-5" />
+                                <p class="flex items-center font-semibold text-lg text-primary-200">In-House Recreation
+                                </p>
+                                <img loading="lazy" src="./assets/icons/angle_up.svg" alt="angle up">
+                            </button>
+                            <div class="hidden p-4 text-gray-600 w-full" id="content-6">
+                                <p class="text-sm text-primary-200 font-poppins">Explore Relaxation With Our Signature
+                                    Treatments,
+                                    Massages, And Therapies. Invigorate With Meditative Sessions For Total Rejuvenation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-center text-4xl text-primary-200 font-semibold mt-6">
+                    Adding Life To Years & Years To Life
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer start here -->
+    <!-- <footer class="bg-gray-800 text-white p-4 text-center mt-8">
+        <p>&copy; 2025 Project</p>
+    </footer> -->
+    <!-- Footer end here -->
+
+
+    <!-- Carousel script start here -->
+    <script>
+        const carousel = document.getElementById("carousel");
+        const slides = carousel.children.length;
+        const bullets = document.querySelectorAll(".bullet");
+        let index = 0;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+            bullets.forEach((bullet, i) => {
+                bullet.classList.toggle("active", i === index);
+            });
+        }
+
+        document.getElementById("next").addEventListener("click", () => {
+            index = (index + 1) % slides;
+            updateCarousel();
+        });
+
+        document.getElementById("prev").addEventListener("click", () => {
+            index = (index - 1 + slides) % slides;
+            updateCarousel();
+        });
+
+        bullets.forEach((bullet, i) => {
+            bullet.addEventListener("click", () => {
+                index = i;
+                updateCarousel();
+            });
+        });
+
+        updateCarousel();
+    </script>
+    <!-- Carousel script end here -->
+
+    <!-- Accordion script start here -->
+    <script>
+        function toggleAccordion(index) {
+            // Close all accordions
+            document.querySelectorAll('[id^="content-"]').forEach((el) => el.classList.add('hidden'));
+            document.querySelectorAll('[id^="icon-"]').forEach((icon) => icon.classList.remove('rotate-180'));
+
+            // Open the selected one
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            }
+        }
+    </script>
+    <!-- Accordion script end here -->
+</body>
+
+</html>
